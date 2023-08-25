@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16.5)
+project(mycmake)
+add_executable(mycmake main.c add.c)
+#target_include_directories(mycmake PUBLIC .)
+install(TARGETS mycmake RUNTIME DESTINATION bin)
